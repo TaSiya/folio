@@ -1,0 +1,48 @@
+:root{
+   --shadow: 0 3px 5px rgba(104, 104, 104, 0.8);
+   --whiteShadow : 0 3px 5px rgba(104, 104, 104, 0.8);
+   --dark: #333;
+   --light: #ddd;
+   --white: #fff;
+}
+
+/* The grid template for the sections */
+.wrapper{
+   display: grid;
+   grid-template-columns: 1fr 3fr 1fr;
+}
+
+/* Setting the background color for all the sections */
+.left{background-color: var(--dark);}
+.right{background-color: var(--light);}
+.middle{background-color: #eeea;}
+
+/* left section styling first */
+.left{
+   padding-left: 1rem;
+   color: var(--light);
+}
+.left a{
+   text-decoration: none;
+   color: inherit;
+   font-weight: bold;
+}
+.left a:hover {
+   color: yellow;
+}
+
+.profile{
+   text-align: center;
+}
+
+ul, li{
+   list-style: none;
+   padding: 0.5rem;
+}
+
+#pic{
+   margin-top: 1rem;
+   width: 10em;
+   border-radius: 50%;
+   box-shadow: var(--whiteShadow);
+}
